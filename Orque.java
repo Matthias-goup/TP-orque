@@ -63,23 +63,23 @@ class Orque{
         }
       }
 
-      if(orque1Attaque){
-       //C'est au tour du premier orque d'attaquer
-        if(orque1.getVitesseA() <= orque2.getVitesseA()) {
+      else{
+       //C'est au tour du deuxième orque d'attaquer
+        if(orque2.getVitesseA() <= orque1.getVitesseA()) {
           // Si la vitesse d'attaque de l'orque est basse, il n'attaque qu'une fois
-           if(Ut.randomMinMax(orque1.getProbatouche(), 100) <= orque1.getProbatouche() ) {
-            Orque2.pdv -= Orque1.getDommage();
+           if(Ut.randomMinMax(orque2.getProbatouche(), 100) <= orque2.getProbatouche() ) {
+            Orque1.pdv -= Orque2.getDommage();
           }
         }
         
         else{
           i = 0;
-          while(i < orque2.getProbatouche){
+          while(i < orque1.getProbatouche){
             // SI la vitesse d'attaque de l'orque est haute, il attaque plusieurs fois
-            if(Ut.randomMinMax(orque1.getProbatouche(), 100) <= orque1.getProbatouche() ) {
-            Orque2.pdv -= Orque1.getDommage();
+            if(Ut.randomMinMax(orque2.getProbatouche(), 100) <= orque2.getProbatouche() ) {
+            Orque1.pdv -= Orque2.getDommage();
             }
-            i += Orque1.getVitesseA();
+            i += Orque2.getVitesseA();
           }
         }
       }
