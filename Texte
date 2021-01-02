@@ -1,0 +1,11 @@
+Objectif : Améliorer le code du tp Orque afin d'y ajouter de nouvelles fonctionnalités
+
+Idées :
+- Amélioration visuelle par ajout d'une arène sur le terminal en caractères.
+
+- Gestion de la vie des Orcs avec visuel
+J'imagine l'ajout de caractères rouges genre "-8" en dessous de la barre de vie 
+
+- Système de coup critique : à chaque "coup" ajout d'une classe CC qui infligerait  fois 1,5 ou 2 fois + de dégats. + Ajout visuel d'une animation stylée ?
+
+- 
